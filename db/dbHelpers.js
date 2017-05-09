@@ -27,6 +27,7 @@ exports.saveAnimals = (animalObjArr, callback) => {
     callback();
   } else {
     const animal = animalObjArr.pop()
+    console.log('ANIMAL: ', animal);
 
     db.Animal.findOrCreate({where: animal})
              .then(() => {

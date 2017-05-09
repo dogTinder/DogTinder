@@ -19,7 +19,6 @@ function removeSmallPicsFromOneDog(dog) {
     }
     return newPhotos;
   }
-  console.log(dog.name.$t)
   if(dog.media.photos) {
     dog.media.photos.photo = modifyPhotos(dog.media.photos.photo);
     return dog;
